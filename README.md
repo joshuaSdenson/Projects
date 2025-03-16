@@ -1,0 +1,4 @@
+![HONEYPOT](https://github.com/user-attachments/assets/56a3d814-c1c7-4918-a19c-1435219f5fba)
+
+First, I created an account with Azure that included a $200 credit. I then created a resource group and began working on creating a Virtual Network before moving on to spinning up our Subnet. Connected to our Subnet is our Virtual Machine running a Windows OS, with its firewalls completely open to the internet. The Log Analytics Workspace (LAW) acted as our log repository and used an Azure monitoring agent to forward all security logs to LAW. I also created a Sentinel instance that connected to LAW. Additionally, I uploaded a Watchlist containing geographical information with IP blocks and used it in conjunction with a KQL query to look up all the failed log-ons. Using the attackers' IP address, I was able to map it.
+
